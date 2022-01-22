@@ -21,7 +21,7 @@ class LastConversationController extends \Illuminate\Routing\Controller
 
 //            ->where('usertests.user_id', '!=', (string)$request->senderId)
 
-            ->paginate(20);
+            ->get();
 
 
         return $notices;
