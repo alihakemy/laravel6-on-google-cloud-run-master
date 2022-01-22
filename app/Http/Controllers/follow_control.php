@@ -17,6 +17,8 @@ class follow_control extends Controller
 
     function removefollow(Request $request)
     {
+
+
         $notices = DB::table('follow_tables')
             ->where('id', $request->id)
             ->where('follow', $request->follow)
