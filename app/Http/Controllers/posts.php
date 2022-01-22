@@ -179,7 +179,7 @@ class posts extends Controller
         $posts = DB::table('posts')
             ->select(
 
-                array("posts.*", "usertests.*", 'likesposts.liked')
+                array( "usertests.*", 'likesposts.liked',"posts.*")
             )
             ->join('follow_tables', 'posts.post_user_id', '=', 'follow_tables.follow')
             ->join('usertests', 'usertests.user_id', '=', 'follow_tables.follow')
