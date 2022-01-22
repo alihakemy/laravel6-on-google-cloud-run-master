@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\DB;
 class comments_control extends Controller
 {
 
+
     function  addcomment(Request  $request)
     {
 
